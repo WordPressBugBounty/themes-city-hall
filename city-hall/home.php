@@ -13,35 +13,24 @@ get_header(); ?>
 	<div class="site-section-wrapper site-section-wrapper-main">
 
 		<div id="site-page-columns">
-
 			<?php 
 			// Function to display the SIDEBAR (if not hidden)
-			ilovewp_helper_display_page_sidebar_column(); ?><!-- ws fix
+			ilovewp_helper_display_page_sidebar_column(); 
+			
+			// Function to display the START of the content column markup
+			ilovewp_helper_display_page_content_wrapper_start();
 
-			--><div id="site-column-main" class="site-column site-column-main">
+				the_archive_title( '<h1 class="page-title archives-title">', '</h1>' );
+				the_archive_description( '<div class="archives-content">', '</div>' );
 				
-				<div class="site-column-main-wrapper">
+				get_template_part('loop');
 
-					<?php
-
-					// Function to display the START of the content column markup
-					ilovewp_helper_display_page_content_wrapper_start(); ?>
-
-					<?php 
-					the_archive_title( '<h1 class="page-title archives-title">', '</h1>' );
-					the_archive_description( '<div class="archives-content">', '</div>' );
-					
-					get_template_part('loop');
-
-					// Function to display the END of the content column markup
-					ilovewp_helper_display_page_content_wrapper_end();
-
-					// Function to display the SECONDARY SIDEBAR (if not hidden)
-					ilovewp_helper_display_page_sidebar_secondary(); ?>
-
-				</div><!-- .site-column-wrapper .site-content-wrapper -->
-			</div><!-- #site-column-main .site-column .site-column-main -->
-
+			// Function to display the END of the content column markup
+			ilovewp_helper_display_page_content_wrapper_end(); 
+			
+			// Function to display the SECONDARY SIDEBAR (if not hidden)
+			ilovewp_helper_display_page_sidebar_secondary();
+			?>
 		</div><!-- #site-page-columns -->
 
 	</div><!-- .site-section-wrapper .site-section-wrapper-main -->

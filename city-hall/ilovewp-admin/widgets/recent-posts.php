@@ -83,33 +83,27 @@ class academiathemes_widget_recent_posts extends WP_Widget {
 
 			<div class="widget-column-widget-wrapper">
 				<?php if ( has_post_thumbnail() && $show_photo == 'on' ) { ?>
-				<div class="entry-thumbnail">
-					<div class="entry-thumbnail-wrapper"><?php 
+				<div class="entry-thumbnail"><?php 
+					// CREATE A PROPER ALT ATTRIBUTE FOR THE THUMBNAIL
+					$image_alt_attribute = get_post_meta(get_post_thumbnail_id( ), '_wp_attachment_image_alt', true);
+					if ( empty($image_alt_attribute) ) {
+						$image_alt_attribute = __('Thumbnail for the post titled: ','city-hall') . the_title_attribute( 'echo=0' );
+					}
 
-						// CREATE A PROPER ALT ATTRIBUTE FOR THE THUMBNAIL
-						$image_alt_attribute = get_post_meta(get_post_thumbnail_id( ), '_wp_attachment_image_alt', true);
-						if ( empty($image_alt_attribute) ) {
-							$image_alt_attribute = __('Thumbnail for the post titled: ','city-hall') . the_title_attribute( 'echo=0' );
-						}
+					echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+					the_post_thumbnail($thumb_name, array('alt' => $image_alt_attribute));
+					echo '</a>';
 
-						echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
-						the_post_thumbnail($thumb_name, array('alt' => $image_alt_attribute));
-						echo '</a>';
+					if ($show_date == 'on') { echo ilovewp_helper_display_datetime($post); }
 
-						if ($show_date == 'on') { echo ilovewp_helper_display_datetime($post); }
-
-					?></div><!-- .entry-thumbnail-wrapper -->
-				</div><!-- .entry-thumbnail --><!-- ws fix
-				--><?php } ?><div class="entry-preview">
-					<div class="entry-preview-wrapper">
-						<?php 
-						if ( ( !has_post_thumbnail() || $show_photo != 'on' ) && $show_date == 'on' ) { echo ilovewp_helper_display_datetime($post); }
-						echo ilovewp_helper_display_entry_title($post);
-						if ($show_excerpt == 'on') { echo ilovewp_helper_display_excerpt($post); }
-						if ($show_button == 'on') { echo ilovewp_helper_display_button_readmore($post); } 
-						?>
-						
-					</div><!-- .entry-preview-wrapper -->
+				?></div><!-- .entry-thumbnail -->
+				<?php } ?><div class="entry-preview">
+					<?php 
+					if ( ( !has_post_thumbnail() || $show_photo != 'on' ) && $show_date == 'on' ) { echo ilovewp_helper_display_datetime($post); }
+					echo ilovewp_helper_display_entry_title($post);
+					if ($show_excerpt == 'on') { echo ilovewp_helper_display_excerpt($post); }
+					if ($show_button == 'on') { echo ilovewp_helper_display_button_readmore($post); } 
+					?>
 				</div><!-- .entry-preview -->
 			</div><!-- .widget-column-widget-wrapper -->
 

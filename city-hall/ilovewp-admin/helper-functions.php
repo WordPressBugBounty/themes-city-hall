@@ -311,7 +311,7 @@ if( ! function_exists( 'ilovewp_helper_display_page_sidebar_secondary' ) ) {
 if( ! function_exists( 'ilovewp_helper_display_page_content_wrapper_start' ) ) {
 	function ilovewp_helper_display_page_content_wrapper_start() {
 
-		?><div id="site-column-content" class="site-column site-column-content"><div class="site-column-wrapper site-column-content-wrapper"><?php
+		?><div id="site-column-main" class="site-column site-column-main"><div class="site-column-main-wrapper"><?php
 
 	}
 }
@@ -320,7 +320,7 @@ if( ! function_exists( 'ilovewp_helper_display_page_content_wrapper_start' ) ) {
 if( ! function_exists( 'ilovewp_helper_display_page_content_wrapper_end' ) ) {
 	function ilovewp_helper_display_page_content_wrapper_end() {
 
-		?></div><!-- .site-column-wrapper .site-column-content-wrapper --></div><!-- .#site-column-content .site-column .site-column-content --><?php
+		?></div><!-- .site-column-wrapper .site-content-wrapper --></div><!-- #site-column-main .site-column .site-column-main --><?php
 
 	}
 }

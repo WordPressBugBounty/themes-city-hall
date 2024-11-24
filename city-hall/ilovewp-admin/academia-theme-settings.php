@@ -21,7 +21,7 @@ if( ! defined( 'ILOVEWP_THEME_VIDEO_COMPARISON' ) ) {
 	define( 'ILOVEWP_THEME_VIDEO_COMPARISON', 'https://youtu.be/jz3TNlXgH48?t=900');
 }
 if( ! defined( 'ILOVEWP_THEME_DOCUMENTATION_URL' ) ) {
-	define( 'ILOVEWP_THEME_DOCUMENTATION_URL', 'https://www.academiathemes.com/documentation/city-hall-lite/?utm_source=dashboard&utm_medium=doc-page&utm_campaign=city-hall-lite&utm_content=documentation-link' );
+	define( 'ILOVEWP_THEME_DOCUMENTATION_URL', 'https://www.ilovewp.com/documentation/city-hall/?utm_source=dashboard&utm_medium=doc-page&utm_campaign=city-hall-lite&utm_content=documentation-link' );
 }
 if( ! defined( 'ILOVEWP_THEME_SUPPORT_FORUM_URL' ) ) {
 	define( 'ILOVEWP_THEME_SUPPORT_FORUM_URL', 'https://wordpress.org/support/theme/city-hall/' );
@@ -127,7 +127,7 @@ function academiathemes_settings_page_doc() {
 									<div id="mc_embed_signup_scroll" style="margin: 24px 0; ">
 										<input type="email" value="<?php echo esc_attr($current_user->user_email); ?>" name="EMAIL" class="email" id="mce-EMAIL" style="min-width: 250px; padding: 2px 8px;" placeholder="email address" required="">
 										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2e4ed535a2db4d9381275cebe_08bd553137" tabindex="-1" value=""></div>
+										<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b9a9c29fe8fb1b02d49b2ba2b_18a2e743db" tabindex="-1" value=""></div>
 										<input type="submit" value="<?php esc_attr_e('Subscribe','city-hall'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button button-primary">
 									</div><!-- #mc_embed_signup_scroll -->
 									<p class="newsletter-disclaimer" style="font-size: 14px;"><?php esc_html_e('We use Mailchimp as our marketing platform. By clicking above to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing.','city-hall'); ?></p>

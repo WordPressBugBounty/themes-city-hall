@@ -209,7 +209,7 @@ function academiathemes_customizer_define_general_sections( $sections ) {
                     'default'           => 1
                 ),
                 'control'               => array(
-                    'label'             => __( 'Display "Theme by AcademiaThemes"', 'city-hall' ),
+                    'label'             => __( 'Display "Powered by City Hall"', 'city-hall' ),
                     'type'              => 'checkbox'
                 )
             ),

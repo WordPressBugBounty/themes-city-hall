@@ -12,19 +12,18 @@ get_header();
 	while (have_posts()) : the_post();
 	?>
 
-	<div class="site-page-content">
-		<div class="site-section-wrapper site-section-wrapper-main">
+	<div id="site-page-columns">
+		<?php 
+		// Function to display the START of the content column markup
+		ilovewp_helper_display_page_content_wrapper_start();
 
-			<?php
-			// Function to display Breadcrumbs
-			ilovewp_helper_display_breadcrumbs($post);
-
+			ilovewp_helper_display_title($post);
 			ilovewp_helper_display_content($post);
 
-			?>
-
-		</div><!-- .site-section-wrapper .site-section-wrapper-main -->
-	</div><!-- .site-page-content -->
+		// Function to display the END of the content column markup
+		ilovewp_helper_display_page_content_wrapper_end(); 
+		?>
+	</div><!-- #site-page-columns -->
 
 	<?php
 	endwhile;

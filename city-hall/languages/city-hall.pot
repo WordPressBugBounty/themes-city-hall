@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: City Hall\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-05 21:29+0000\n"
+"POT-Creation-Date: 2024-11-24 19:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -20,8 +20,8 @@ msgstr ""
 msgid "%s Video Guide"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:208
-#: ilovewp-admin/widgets/recent-posts.php:172
+#: ilovewp-admin/widgets/posts-section.php:201
+#: ilovewp-admin/widgets/recent-posts.php:166
 msgid "- show from all categories -"
 msgstr ""
 
@@ -41,16 +41,16 @@ msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ilovewp-admin/widgets/recent-posts.php:192
+#: ilovewp-admin/widgets/recent-posts.php:186
 msgid "2"
 msgstr ""
 
-#: ilovewp-admin/widgets/recent-posts.php:193
+#: ilovewp-admin/widgets/recent-posts.php:187
 msgid "3"
 msgstr ""
 
 #: ilovewp-admin/academia-theme-settings.php:203
-#: ilovewp-admin/widgets/recent-posts.php:194
+#: ilovewp-admin/widgets/recent-posts.php:188
 msgid "4"
 msgstr ""
 
@@ -86,13 +86,13 @@ msgstr ""
 msgid "Add a Rating for City Hall"
 msgstr ""
 
-#: 404.php:29
+#: 404.php:24
 msgid ""
 "Apologies, but the requested page cannot be found. Perhaps searching will "
 "help find a related page."
 msgstr ""
 
-#: search.php:34
+#: search.php:29
 msgid "Apologies, but the search query did not return any results."
 msgstr ""
 
@@ -139,12 +139,12 @@ msgstr ""
 msgid "Boxed"
 msgstr ""
 
-#: 404.php:36 search.php:36
+#: 404.php:31 search.php:31
 msgid "Browse Categories"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:206
-#: ilovewp-admin/widgets/recent-posts.php:170
+#: ilovewp-admin/widgets/posts-section.php:199
+#: ilovewp-admin/widgets/recent-posts.php:164
 msgid "Category of posts"
 msgstr ""
 
@@ -162,10 +162,10 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: ilovewp-admin/widgets/featured-pages.php:172
-#: ilovewp-admin/widgets/featured-pages.php:191
-#: ilovewp-admin/widgets/featured-pages.php:210
-#: ilovewp-admin/widgets/featured-pages.php:229
+#: ilovewp-admin/widgets/featured-pages.php:167
+#: ilovewp-admin/widgets/featured-pages.php:186
+#: ilovewp-admin/widgets/featured-pages.php:205
+#: ilovewp-admin/widgets/featured-pages.php:224
 msgid "Choose page:"
 msgstr ""
 
@@ -288,7 +288,7 @@ msgstr ""
 msgid "Copyright text border color"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:232
+#: ilovewp-admin/widgets/posts-section.php:225
 msgid "current posts per page setting"
 msgstr ""
 
@@ -331,11 +331,11 @@ msgid "Demo Content Importer"
 msgstr ""
 
 #: customizer/sections/general.php:212
-msgid "Display \"Theme by AcademiaThemes\""
+msgid "Display \"Powered by City Hall\""
 msgstr ""
 
-#: ilovewp-admin/widgets/featured-pages.php:264
-#: ilovewp-admin/widgets/recent-posts.php:210
+#: ilovewp-admin/widgets/featured-pages.php:259
+#: ilovewp-admin/widgets/recent-posts.php:204
 msgid "Display a Read More button"
 msgstr ""
 
@@ -343,20 +343,20 @@ msgstr ""
 msgid "Display author bio at the end of posts"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:258
+#: ilovewp-admin/widgets/posts-section.php:251
 msgid "Display Blog Archives pagination"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:253
-#: ilovewp-admin/widgets/recent-posts.php:215
+#: ilovewp-admin/widgets/posts-section.php:246
+#: ilovewp-admin/widgets/recent-posts.php:209
 msgid "Display date"
 msgstr ""
 
-#: ilovewp-admin/widgets/recent-posts.php:205
+#: ilovewp-admin/widgets/recent-posts.php:199
 msgid "Display excerpt"
 msgstr ""
 
-#: ilovewp-admin/widgets/featured-pages.php:249
+#: ilovewp-admin/widgets/featured-pages.php:244
 msgid "Display Featured Image"
 msgstr ""
 
@@ -364,7 +364,7 @@ msgstr ""
 msgid "Display Featured Images in Posts and Pages"
 msgstr ""
 
-#: ilovewp-admin/widgets/featured-pages.php:259
+#: ilovewp-admin/widgets/featured-pages.php:254
 msgid "Display Page Excerpt"
 msgstr ""
 
@@ -392,15 +392,15 @@ msgstr ""
 msgid "Display the Dynamic Menu"
 msgstr ""
 
-#: ilovewp-admin/widgets/recent-posts.php:200
+#: ilovewp-admin/widgets/recent-posts.php:194
 msgid "Display thumbnail"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:248
+#: ilovewp-admin/widgets/posts-section.php:241
 msgid "Display thumbnails in the posts list"
 msgstr ""
 
-#: ilovewp-admin/widgets/featured-pages.php:254
+#: ilovewp-admin/widgets/featured-pages.php:249
 msgid "Display Title"
 msgstr ""
 
@@ -491,6 +491,7 @@ msgid "Full Width"
 msgstr ""
 
 #. Name of the template
+#: page-templates/fullwidth.php:2
 msgid "Full Width Page"
 msgstr ""
 
@@ -551,10 +552,12 @@ msgid "Homepage: Content Widgets (Full)"
 msgstr ""
 
 #. Name of the template
+#: page-templates/homepage-only-widgets.php:2
 msgid "Homepage: Only Widgets"
 msgstr ""
 
 #. Name of the template
+#: page-templates/homepage-widgets-page.php:2
 msgid "Homepage: Widgets + Page Content"
 msgstr ""
 
@@ -663,7 +666,7 @@ msgstr ""
 msgid "Mobile Menu"
 msgstr ""
 
-#: 404.php:43 search.php:41
+#: 404.php:38 search.php:36
 msgid "Monthly Archives"
 msgstr ""
 
@@ -688,8 +691,8 @@ msgstr ""
 msgid "Nonpriority"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:226
-#: ilovewp-admin/widgets/recent-posts.php:190
+#: ilovewp-admin/widgets/posts-section.php:219
+#: ilovewp-admin/widgets/recent-posts.php:184
 msgid "Number of posts to display"
 msgstr ""
 
@@ -742,10 +745,11 @@ msgid "Overlaid"
 msgstr ""
 
 #. Name of the template
+#: page-templates/pagebuilder.php:2
 msgid "Page Builder Template"
 msgstr ""
 
-#: 404.php:27
+#: 404.php:22
 msgid "Page not found"
 msgstr ""
 
@@ -753,7 +757,7 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: ilovewp-admin/widgets/posts-section.php:259
+#: ilovewp-admin/widgets/posts-section.php:252
 msgid "Pagination can be displayed only if no category is selected."
 msgstr ""
 
@@ -768,6 +772,10 @@ msgstr ""
 
 #: customizer/sections/general.php:107
 msgid "Posts"
+msgstr ""
+
+#: footer.php:72
+msgid "Powered by"
 msgstr ""
 
 #: customizer/sections/color-scheme.php:235
@@ -812,9 +820,9 @@ msgid "Read More"
 msgstr ""
 
 #. This is the copyright notice that appears in the footer of the website.
-#: index.php:37 customizer/helpers-defaults.php:58
+#: index.php:30 customizer/helpers-defaults.php:58
 #: customizer/sections/general.php:177
-#: ilovewp-admin/widgets/posts-section.php:190
+#: ilovewp-admin/widgets/posts-section.php:183
 msgid "Recent Posts"
 msgstr ""
 
@@ -834,7 +842,7 @@ msgstr ""
 msgid "Responsive Layout"
 msgstr ""
 
-#: search.php:27
+#: search.php:22
 msgid "Search Results for"
 msgstr ""
 
@@ -842,10 +850,10 @@ msgstr ""
 msgid "Secondary Menu"
 msgstr ""
 
-#: ilovewp-admin/widgets/featured-pages.php:170
-#: ilovewp-admin/widgets/featured-pages.php:189
-#: ilovewp-admin/widgets/featured-pages.php:208
-#: ilovewp-admin/widgets/featured-pages.php:227
+#: ilovewp-admin/widgets/featured-pages.php:165
+#: ilovewp-admin/widgets/featured-pages.php:184
+#: ilovewp-admin/widgets/featured-pages.php:203
+#: ilovewp-admin/widgets/featured-pages.php:222
 msgid "Select page:"
 msgstr ""
 
@@ -965,10 +973,6 @@ msgid ""
 "slower outside of these hours."
 msgstr ""
 
-#: footer.php:72
-msgid "Theme by"
-msgstr ""
-
 #: customizer/customizer.php:207
 msgid "Theme Colors"
 msgstr ""
@@ -1025,9 +1029,9 @@ msgid ""
 msgstr ""
 
 #: ilovewp-admin/helper-functions.php:422
-#: ilovewp-admin/widgets/posts-section.php:96
-#: ilovewp-admin/widgets/posts-section.php:125
-#: ilovewp-admin/widgets/recent-posts.php:92
+#: ilovewp-admin/widgets/posts-section.php:95
+#: ilovewp-admin/widgets/posts-section.php:122
+#: ilovewp-admin/widgets/recent-posts.php:90
 msgid "Thumbnail for the post titled: "
 msgstr ""
 
@@ -1078,11 +1082,11 @@ msgid ""
 msgstr ""
 
 #: customizer/sections/color-scheme.php:371
-#: ilovewp-admin/widgets/featured-pages.php:151
-#: ilovewp-admin/widgets/featured-pages.php:165
-#: ilovewp-admin/widgets/posts-section.php:201
-#: ilovewp-admin/widgets/recent-posts.php:154
-#: ilovewp-admin/widgets/recent-posts.php:165
+#: ilovewp-admin/widgets/featured-pages.php:146
+#: ilovewp-admin/widgets/featured-pages.php:160
+#: ilovewp-admin/widgets/posts-section.php:194
+#: ilovewp-admin/widgets/recent-posts.php:148
+#: ilovewp-admin/widgets/recent-posts.php:159
 msgid "Widget Title"
 msgstr ""
 
@@ -1104,7 +1108,7 @@ msgid "Yellow"
 msgstr ""
 
 #. Theme name and version
-#: ilovewp-admin/widgets/posts-section.php:241
+#: ilovewp-admin/widgets/posts-section.php:234
 #, php-format
 msgid ""
 "You can change the current Posts per Page value on the <a href=\"%1$s\">"

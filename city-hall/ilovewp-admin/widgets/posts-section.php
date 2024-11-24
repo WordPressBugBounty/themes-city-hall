@@ -87,8 +87,7 @@ class academiathemes_widget_posts_section extends WP_Widget {
 					echo '<div class="site-column-wrapper">';
 
 						if ( has_post_thumbnail() ) { ?>
-						<div class="entry-thumbnail">
-							<div class="entry-thumbnail-wrapper"><?php 
+						<div class="entry-thumbnail"><?php 
 
 								// CREATE A PROPER ALT ATTRIBUTE FOR THE THUMBNAIL
 								$image_alt_attribute = get_post_meta(get_post_thumbnail_id( ), '_wp_attachment_image_alt', true);
@@ -102,8 +101,7 @@ class academiathemes_widget_posts_section extends WP_Widget {
 
 								if ($show_date == 'on') { echo ilovewp_helper_display_datetime($post); }
 
-							?></div><!-- .entry-thumbnail-wrapper -->
-						</div><!-- .entry-thumbnail --><?php } ?>
+							?></div><!-- .entry-thumbnail --><?php } ?>
 						<?php echo ilovewp_helper_display_entry_title($post);
 						echo ilovewp_helper_display_excerpt($post);
 
@@ -116,8 +114,7 @@ class academiathemes_widget_posts_section extends WP_Widget {
 							?><li <?php post_class($classes); ?>><?php
 
 							if ( has_post_thumbnail() && $show_photo == 'on' ) { ?>
-							<div class="entry-thumbnail">
-								<div class="entry-thumbnail-wrapper"><?php 
+							<div class="entry-thumbnail"><?php 
 
 									// CREATE A PROPER ALT ATTRIBUTE FOR THE THUMBNAIL
 									$image_alt_attribute = get_post_meta(get_post_thumbnail_id( ), '_wp_attachment_image_alt', true);
@@ -129,16 +126,12 @@ class academiathemes_widget_posts_section extends WP_Widget {
 									the_post_thumbnail($thumb_name, array('alt' => $image_alt_attribute));
 									echo '</a>';
 
-								?></div><!-- .entry-thumbnail-wrapper -->
-							</div><!-- .entry-thumbnail --><?php } ?><!-- ws fix
-							--><div class="entry-preview">
-								<div class="entry-preview-wrapper">
-									<?php 
-									echo ilovewp_helper_display_entry_title($post);
-									if ($show_date == 'on') { echo ilovewp_helper_display_datetime($post); }
-									?>
-									
-								</div><!-- .entry-preview-wrapper -->
+								?><!-- .entry-thumbnail --><?php } ?>
+							<div class="entry-preview">
+								<?php 
+								echo ilovewp_helper_display_entry_title($post);
+								if ($show_date == 'on') { echo ilovewp_helper_display_datetime($post); }
+								?>
 							</div><!-- .entry-preview -->
 
 							<?php echo '</li>';

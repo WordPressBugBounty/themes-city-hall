@@ -90,24 +90,19 @@ class academiathemes_widget_featured_pages extends WP_Widget {
 						if ( $show_photo == 1 && has_post_thumbnail() ) { echo ' has-post-thumbnail'; } ?>">
 								<div class="widget-column-widget-wrapper">
 									<?php if ( $show_photo == 1 && has_post_thumbnail() ) { ?>
-									<div class="entry-thumbnail">
-										<div class="entry-thumbnail-wrapper"><?php 
-											echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
-											the_post_thumbnail($thumb_name);
-											echo '</a>';
-										?></div><!-- .entry-thumbnail-wrapper -->
-									</div><!-- .entry-thumbnail --><?php } ?>
+									<div class="entry-thumbnail"><?php 
+										echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+										the_post_thumbnail($thumb_name);
+										echo '</a>';
+									?></div><!-- .entry-thumbnail --><?php } ?>
 									<div class="entry-preview">
-										<div class="entry-preview-wrapper">
-											<?php 
-											if ($show_title == 1) { 
-													echo ilovewp_helper_display_entry_title($post);
-											}
-											if ($show_excerpt == 1) { echo ilovewp_helper_display_excerpt($post); }
-											if ($show_button == 1) { echo ilovewp_helper_display_button_readmore($post); } 
-											?>
-											
-										</div><!-- .entry-preview-wrapper -->
+										<?php 
+										if ($show_title == 1) { 
+												echo ilovewp_helper_display_entry_title($post);
+										}
+										if ($show_excerpt == 1) { echo ilovewp_helper_display_excerpt($post); }
+										if ($show_button == 1) { echo ilovewp_helper_display_button_readmore($post); } 
+										?>	
 									</div><!-- .entry-preview -->
 								</div><!-- .widget-column-widget-wrapper -->
 							</li><!-- .widget-column .widget-column-1 .widget-column-widget --><!-- ws fix 

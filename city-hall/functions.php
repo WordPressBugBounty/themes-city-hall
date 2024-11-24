@@ -6,7 +6,7 @@ if ( ! isset( $content_width ) ) $content_width = 560;
  * Define some constats
  */
 if( ! defined( 'ILOVEWP_VERSION' ) ) {
-	define( 'ILOVEWP_VERSION', '2.2.0' );
+	define( 'ILOVEWP_VERSION', '2.3.0' );
 }
 if( ! defined( 'ILOVEWP_THEME_LITE' ) ) {
 	define( 'ILOVEWP_THEME_LITE', true );
@@ -138,7 +138,7 @@ function city_hall_js_scripts() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	// Theme stylesheet.
-	wp_enqueue_style( 'city-hall-style', get_stylesheet_uri(), array(), $theme_version );
+	wp_enqueue_style( 'city-hall-style', get_stylesheet_directory_uri() . '/style.css', array(), $theme_version );
 
 	if (! is_admin()) {
 

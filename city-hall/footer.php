@@ -69,7 +69,7 @@
 
 			<div id="site-footer-credit">
 				<?php $copyright_default = __('Copyright &copy; ','city-hall') . date("Y",time()) . ' ' . get_bloginfo('name') . '.'; ?><p class="site-credit"><?php echo esc_html(get_theme_mod( 'city_hall_copyright_text', $copyright_default )); ?>
-					<?php if ( get_theme_mod('theme-display-footer-credit', 1 ) == 1) { ?> <span class="ilovewp-credit"><?php esc_html_e('Theme by', 'city-hall'); ?> <a href="https://www.ilovewp.com/" rel="noopener">ILOVEWP.com</a></span><?php } ?>
+					<?php if ( get_theme_mod('theme-display-footer-credit', 1 ) == 1) { ?> <span class="ilovewp-credit"><?php esc_html_e('Powered by', 'city-hall'); ?> <a href="https://www.ilovewp.com/themes/city-hall/" rel="noopener">City Hall</a></span><?php } ?>
 				</p>
 			</div><!-- #site-footer-credit -->
 
