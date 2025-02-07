@@ -39,8 +39,8 @@ class city_hall_notice {
 
 	public function get_notices() {
 
-		$academiathemes_theme_admin_notices = get_option( 'city_hall_admin_notices' );
-		return $academiathemes_theme_admin_notices;
+		$ilovewp_theme_admin_notices = get_option( 'city_hall_admin_notices' );
+		return $ilovewp_theme_admin_notices;
 
 	}
 

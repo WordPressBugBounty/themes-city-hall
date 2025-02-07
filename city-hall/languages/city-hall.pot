@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: City Hall\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 19:09+0000\n"
+"POT-Creation-Date: 2025-02-07 19:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -12,7 +12,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.7.1\n"
+"X-Domain: city-hall"
 
 #. %s theme name
 #: ilovewp-admin/admin-notices/ilovewp-notice-welcome.php:62
@@ -205,6 +207,10 @@ msgstr ""
 msgid "City Hall PRO Details"
 msgstr ""
 
+#: ilovewp-admin/admin-notices/ilovewp-notice-magma.php:56
+msgid "City Hall Theme"
+msgstr ""
+
 #: ilovewp-admin/academia-theme-settings.php:69
 msgid "City Hall Theme Screenshot"
 msgstr ""
@@ -307,6 +313,16 @@ msgid "Custom Widgets"
 msgstr ""
 
 #. %1$s current user display name.
+#: ilovewp-admin/admin-notices/ilovewp-notice-magma.php:64
+#, php-format
+msgid ""
+"Dear %1$s! %3$sIf you like using this theme, you’ll love Magma—a fantastic, "
+"high-performance theme designed to help you build a professional WordPress "
+"website with ease. %4$s is fast, flexible, and built for content-driven "
+"websites, giving you full control without unnecessary bloat."
+msgstr ""
+
+#. %1$s current user display name.
 #: ilovewp-admin/admin-notices/ilovewp-notice-upgrade.php:64
 #, php-format
 msgid ""
@@ -328,6 +344,10 @@ msgstr ""
 
 #: ilovewp-admin/academia-theme-settings.php:212
 msgid "Demo Content Importer"
+msgstr ""
+
+#: ilovewp-admin/admin-notices/ilovewp-notice-magma.php:75
+msgid "Discover Magma today!"
 msgstr ""
 
 #: customizer/sections/general.php:212
@@ -655,6 +675,10 @@ msgstr ""
 
 #: functions.php:340
 msgid "Logo for "
+msgstr ""
+
+#: ilovewp-admin/admin-notices/ilovewp-notice-magma.php:75
+msgid "Magma Video Guide"
 msgstr ""
 
 #: customizer/sections/general.php:60

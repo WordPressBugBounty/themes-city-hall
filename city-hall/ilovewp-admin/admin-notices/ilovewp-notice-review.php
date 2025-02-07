@@ -46,14 +46,14 @@ class city_hall_notice_review extends city_hall_notice {
 		}
 
 		?>
-		<div id="message" class="notice notice-success academiathemes-notice academiathemes-review-notice">
-			<a class="academiathemes-message-close notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
-			<div class="academiathemes-message-content">
+		<div id="message" class="notice notice-success ilovewp-notice ilovewp-review-notice">
+			<a class="ilovewp-message-close notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
+			<div class="ilovewp-message-content">
 
-				<div class="academiathemes-message-image">
-					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>"><img class="academiathemes-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall', 'city-hall' ); ?>" /></a>
+				<div class="ilovewp-message-image">
+					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>"><img class="ilovewp-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall', 'city-hall' ); ?>" /></a>
 				</div><!-- ws fix
-				--><div class="academiathemes-message-text">
+				--><div class="ilovewp-message-text">
 				
 					<p>
 						<?php
@@ -71,14 +71,14 @@ class city_hall_notice_review extends city_hall_notice {
 						?>
 					</p>
 
-					<p class="notice-buttons"><a href="https://wordpress.org/support/theme/city-hall/reviews/#new-post" class="btn button button-primary academiathemes-button" target="_blank"><span class="dashicons dashicons-awards"></span> <?php esc_html_e( 'Add a Rating for City Hall', 'city-hall' ); ?></a>
+					<p class="notice-buttons"><a href="https://wordpress.org/support/theme/city-hall/reviews/#new-post" class="btn button button-primary ilovewp-button" target="_blank"><span class="dashicons dashicons-awards"></span> <?php esc_html_e( 'Add a Rating for City Hall', 'city-hall' ); ?></a>
 					<a href="<?php echo esc_url( $dismiss_url ); ?>" class="btn button button-secondary"><?php esc_html_e( 'Hide this notice', 'city-hall' ); ?></a>
 					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>" class="btn button button-secondary" target="_blank"><span><?php esc_html_e( 'Theme Help', 'city-hall' ); ?></span>
 					</a></p>
 
-				</div><!-- .academiathemes-message-text -->
+				</div><!-- .ilovewp-message-text -->
 
-			</div><!-- .academiathemes-message-content -->
+			</div><!-- .ilovewp-message-content -->
 
 		</div><!-- #message -->
 		<?php

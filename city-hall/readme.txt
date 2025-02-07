@@ -1,15 +1,23 @@
 === City Hall ===
 Contributors: ilovewpcom
-Requires at least: 5.0
-Tested up to: 6.3
+Requires at least: 5.6
+Tested up to: 6.7
 Requires PHP: 7.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 == Description ==
 City Hall is a fast, clean and mobile friendly (responsive) WordPress theme. It is WCAG 2.0 (Level AAA) compliant. It works well with page builders like Elementor, Beaver Builder, Visual Composer, Brizy, Divi, SiteOrigin, etc. City Hall theme is best used to create a website for a city hall, municipality, local government office, church, school, museum, NGO, nonprofit or different education institutions. Other features include: Responsive Design; Mobile Menu; Blog ready; SEO code; Custom Widgets; Color Customization; Layout Settings; Translation Ready; Regular updates.
 
+== License ==
+
+City Hall WordPress theme, Copyright (C) 2025 ILOVEWP
+City Hall WordPress theme is licensed under the GPL3.
+
 == Changelog ==
+
+= Version 2.3.1 - 2025-02-07 =
+* Modified the upgrade notice.
 
 = Version 2.3.0 - 2024-11-24 =
 * Better mobile behavior.

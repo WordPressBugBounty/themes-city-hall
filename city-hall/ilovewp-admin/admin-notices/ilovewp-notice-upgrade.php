@@ -48,14 +48,14 @@ class city_hall_notice_upgrade extends city_hall_notice {
 		}
 
 		?>
-		<div id="message" class="notice notice-success academiathemes-notice academiathemes-upgrade-notice">
-			<a class="academiathemes-message-close notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
-			<div class="academiathemes-message-content">
+		<div id="message" class="notice notice-success ilovewp-notice ilovewp-upgrade-notice">
+			<a class="ilovewp-message-close notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
+			<div class="ilovewp-message-content">
 
-				<div class="academiathemes-message-image">
-					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>"><img class="academiathemes-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall', 'city-hall' ); ?>" /></a>
+				<div class="ilovewp-message-image">
+					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>"><img class="ilovewp-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall', 'city-hall' ); ?>" /></a>
 				</div><!-- ws fix
-				--><div class="academiathemes-message-text">
+				--><div class="ilovewp-message-text">
 				
 					<p>
 						<?php
@@ -72,11 +72,11 @@ class city_hall_notice_upgrade extends city_hall_notice {
 						?>
 					</p>
 
-					<p class="notice-buttons"><a href="https://www.ilovewp.com/themes/city-hall/?utm_source=dashboard&utm_medium=upgrade-notice&utm_campaign=city-hall-lite&utm_content=notice-comparison-link" class="btn button button-primary academiathemes-button" target="_blank" rel="noopener"><span class="dashicons dashicons-editor-table"></span> <?php esc_html_e( 'City Hall vs City Hall PRO Comparison', 'city-hall' ); ?></a> <a href="https://www.ilovewp.com/product/city-hall-pro/?utm_source=dashboard&utm_medium=upgrade-notice&utm_campaign=city-hall-lite&utm_content=notice-upgrade-link" class="btn button button-primary academiathemes-button" target="_blank"><?php esc_html_e( 'City Hall PRO Details', 'city-hall' ); ?></a></p>
+					<p class="notice-buttons"><a href="https://www.ilovewp.com/themes/city-hall/?utm_source=dashboard&utm_medium=upgrade-notice&utm_campaign=city-hall-lite&utm_content=notice-comparison-link" class="btn button button-primary ilovewp-button" target="_blank" rel="noopener"><span class="dashicons dashicons-editor-table"></span> <?php esc_html_e( 'City Hall vs City Hall PRO Comparison', 'city-hall' ); ?></a> <a href="https://www.ilovewp.com/product/city-hall-pro/?utm_source=dashboard&utm_medium=upgrade-notice&utm_campaign=city-hall-lite&utm_content=notice-upgrade-link" class="btn button button-primary ilovewp-button" target="_blank"><?php esc_html_e( 'City Hall PRO Details', 'city-hall' ); ?></a></p>
 
-				</div><!-- .academiathemes-message-text -->
+				</div><!-- .ilovewp-message-text -->
 
-			</div><!-- .academiathemes-message-content -->
+			</div><!-- .ilovewp-message-content -->
 
 		</div><!-- #message -->
 		<?php

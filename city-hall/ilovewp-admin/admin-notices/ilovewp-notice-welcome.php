@@ -38,15 +38,15 @@ class city_hall_notice_welcome extends city_hall_notice {
 		$theme_data	 = wp_get_theme();
 
 		?>
-		<div id="message" class="notice notice-success academiathemes-notice academiathemes-welcome-notice">
-			<a class="academiathemes-message-close notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
+		<div id="message" class="notice notice-success ilovewp-notice ilovewp-welcome-notice">
+			<a class="ilovewp-message-close notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
 
-			<div class="academiathemes-message-content">
-				<div class="academiathemes-message-image">
-					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>"><img class="academiathemes-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall Lite', 'city-hall' ); ?>" /></a>
+			<div class="ilovewp-message-content">
+				<div class="ilovewp-message-image">
+					<a href="<?php echo esc_url( admin_url( 'themes.php?page=city-hall-doc' ) ); ?>"><img class="ilovewp-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall Lite', 'city-hall' ); ?>" /></a>
 				</div><!-- ws fix
-				--><div class="academiathemes-message-text">
-					<h2 class="academiathemes-message-heading"><?php esc_html_e( 'Thank you for choosing City Hall Lite Theme!', 'city-hall' ); ?></h2>
+				--><div class="ilovewp-message-text">
+					<h2 class="ilovewp-message-heading"><?php esc_html_e( 'Thank you for choosing City Hall Lite Theme!', 'city-hall' ); ?></h2>
 					<?php
 					echo '<p>';
 						/* translators: %1$s: theme name, %2$s link */
@@ -57,13 +57,13 @@ class city_hall_notice_welcome extends city_hall_notice {
 						/* translators: %s theme name */
 						printf( esc_html__( 'Get started with %s', 'city-hall' ), esc_html( $theme_data->Name ) );
 					echo '</a>';
-					echo ' <a href="'. esc_url( 'https://youtu.be/jz3TNlXgH48' ) .'" target="_blank" rel="noopener" class="button button-primary academiathemes-button"><span class="dashicons dashicons-youtube"></span> ';
+					echo ' <a href="'. esc_url( 'https://youtu.be/jz3TNlXgH48' ) .'" target="_blank" rel="noopener" class="button button-primary ilovewp-button"><span class="dashicons dashicons-youtube"></span> ';
 						/* translators: %s theme name */
 						printf( esc_html__( '%s Video Guide', 'city-hall' ), esc_html( $theme_data->Name ) );
 					echo '</a></p>';
 					?>
-				</div><!-- .academiathemes-message-text -->
-			</div><!-- .academiathemes-message-content -->
+				</div><!-- .ilovewp-message-text -->
+			</div><!-- .ilovewp-message-content -->
 		</div><!-- #message -->
 		<?php
 	}

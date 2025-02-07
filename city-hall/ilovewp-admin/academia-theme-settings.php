@@ -39,14 +39,14 @@ if( ! defined( 'ILOVEWP_THEME_DEMO_IMPORT_URL' ) ) {
 /**
  * Specify Hooks/Filters
  */
-add_action( 'admin_menu', 'academiathemes_add_menu' );
+add_action( 'admin_menu', 'ilovewp_add_menu' );
 
 /**
 * The admin menu pages
 */
-function academiathemes_add_menu(){
+function ilovewp_add_menu(){
 	
-	add_theme_page( __('City Hall Lite Theme','city-hall'), __('City Hall Lite Theme','city-hall'), 'edit_theme_options', ILOVEWP_PAGE_BASENAME, 'academiathemes_settings_page_doc' ); 
+	add_theme_page( __('City Hall Lite Theme','city-hall'), __('City Hall Lite Theme','city-hall'), 'edit_theme_options', ILOVEWP_PAGE_BASENAME, 'ilovewp_settings_page_doc' ); 
 
 }
 
@@ -57,16 +57,16 @@ function academiathemes_add_menu(){
  * 
  * @return echoes output
  */
-function academiathemes_settings_page_doc() {
+function ilovewp_settings_page_doc() {
 	// get the settings sections array
 	$theme_data = wp_get_theme();
 	?>
 	
-	<div class="academiathemes-wrapper">
-		<div class="academiathemes-header">
-			<div id="academiathemes-theme-info">
-				<div class="academiathemes-message-image">
-					<img class="academiathemes-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall Theme Screenshot', 'city-hall' ); ?>" />
+	<div class="ilovewp-wrapper">
+		<div class="ilovewp-header">
+			<div id="ilovewp-theme-info">
+				<div class="ilovewp-message-image">
+					<img class="ilovewp-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'City Hall Theme Screenshot', 'city-hall' ); ?>" />
 				</div><!-- ws fix
 				--><p><?php 
 
@@ -78,18 +78,18 @@ function academiathemes_settings_page_doc() {
 					); ?></p>
 					<p class="theme-buttons"><a class="button button-primary" href="<?php echo esc_url(ILOVEWP_THEME_DETAILS); ?>" rel="noopener" target="_blank"><?php esc_html_e('Theme Details','city-hall'); ?></a>
 				<a class="button button-primary" href="<?php echo esc_url(ILOVEWP_THEME_DEMO); ?>" rel="noopener" target="_blank"><?php esc_html_e('Theme Demo','city-hall'); ?></a>
-				<?php if ( ILOVEWP_THEME_VIDEO_GUIDE ) { ?><a class="button button-primary academiathemes-button academiathemes-button-youtube" href="<?php echo esc_url(ILOVEWP_THEME_VIDEO_GUIDE); ?>" rel="noopener" target="_blank"><span class="dashicons dashicons-youtube"></span> <?php esc_html_e('Theme Video Tutorial','city-hall'); ?></a><?php } ?></p>
-			</div><!-- #academiathemes-theme-info -->
-		</div><!-- .academiathemes-header -->
+				<?php if ( ILOVEWP_THEME_VIDEO_GUIDE ) { ?><a class="button button-primary ilovewp-button ilovewp-button-youtube" href="<?php echo esc_url(ILOVEWP_THEME_VIDEO_GUIDE); ?>" rel="noopener" target="_blank"><span class="dashicons dashicons-youtube"></span> <?php esc_html_e('Theme Video Tutorial','city-hall'); ?></a><?php } ?></p>
+			</div><!-- #ilovewp-theme-info -->
+		</div><!-- .ilovewp-header -->
 		
-		<div class="academiathemes-documentation">
+		<div class="ilovewp-documentation">
 
-			<ul class="academiathemes-doc-columns clearfix">
-				<li class="academiathemes-doc-column academiathemes-doc-column-1">
-					<div class="academiathemes-doc-column-wrapper">
+			<ul class="ilovewp-doc-columns clearfix">
+				<li class="ilovewp-doc-column ilovewp-doc-column-1">
+					<div class="ilovewp-doc-column-wrapper">
 						<div class="doc-section">
-							<h3 class="column-title"><span class="academiathemes-icon dashicons dashicons-editor-help"></span><span class="academiathemes-title-text"><?php esc_html_e('Documentation and Support','city-hall'); ?></span></h3>
-							<div class="academiathemes-doc-column-text-wrapper">
+							<h3 class="column-title"><span class="ilovewp-icon dashicons dashicons-editor-help"></span><span class="ilovewp-title-text"><?php esc_html_e('Documentation and Support','city-hall'); ?></span></h3>
+							<div class="ilovewp-doc-column-text-wrapper">
 								<?php if ( ILOVEWP_THEME_LITE && ILOVEWP_THEME_SUPPORT_FORUM_URL ) { ?><p><?php 
 								echo sprintf( 
 								/* translators: Theme name and link to WordPress.org Support forum for the theme */
@@ -100,18 +100,18 @@ function academiathemes_settings_page_doc() {
 
 								<p class="doc-buttons"><a class="button button-primary" href="<?php echo esc_url(ILOVEWP_THEME_DOCUMENTATION_URL); ?>" rel="noopener" target="_blank"><?php esc_html_e('View City Hall Documentation','city-hall'); ?></a><?php if ( ILOVEWP_THEME_SUPPORT_FORUM_URL ) { ?> <a class="button button-secondary" href="<?php echo esc_url(ILOVEWP_THEME_SUPPORT_FORUM_URL); ?>" rel="noopener" target="_blank"><?php esc_html_e('Go to City Hall Support Forum','city-hall'); ?></a><?php } ?></p>
 
-							</div><!-- .academiathemes-doc-column-text-wrapper-->
+							</div><!-- .ilovewp-doc-column-text-wrapper-->
 						</div><!-- .doc-section -->
 						<?php if ( ILOVEWP_THEME_VIDEO_GUIDE ) { ?>
 						<div class="doc-section">
 
-							<h3 class="column-title"><span class="academiathemes-icon dashicons dashicons-youtube"></span><span class="academiathemes-title-text"><?php esc_html_e('Theme Video Tutorial','city-hall'); ?></span></h3>
-							<div class="academiathemes-doc-column-text-wrapper">
+							<h3 class="column-title"><span class="ilovewp-icon dashicons dashicons-youtube"></span><span class="ilovewp-title-text"><?php esc_html_e('Theme Video Tutorial','city-hall'); ?></span></h3>
+							<div class="ilovewp-doc-column-text-wrapper">
 							
 								<p><strong><?php esc_html_e('Click the image below to open the video guide in a new browser tab.','city-hall'); ?></strong></p>
 								<p><a href="<?php echo esc_url(ILOVEWP_THEME_VIDEO_GUIDE); ?>" rel="noopener" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/ilovewp-admin/images/city-hall-video-preview.jpg" class="video-preview" alt="<?php esc_attr_e('City Hall Theme Video Tutorial','city-hall'); ?>" /></a></p>
 
-							</div><!-- .academiathemes-doc-column-text-wrapper-->
+							</div><!-- .ilovewp-doc-column-text-wrapper-->
 
 						</div><!-- .doc-section -->
 						<?php } ?>
@@ -120,8 +120,8 @@ function academiathemes_settings_page_doc() {
 							$current_user = wp_get_current_user();
 
 							?>
-							<h3 class="column-title"><span class="academiathemes-icon dashicons dashicons-email-alt"></span><span class="academiathemes-title-text"><?php esc_html_e('Subscribe to our newsletter','city-hall'); ?></span></h3>
-							<div class="academiathemes-doc-column-text-wrapper">
+							<h3 class="column-title"><span class="ilovewp-icon dashicons dashicons-email-alt"></span><span class="ilovewp-title-text"><?php esc_html_e('Subscribe to our newsletter','city-hall'); ?></span></h3>
+							<div class="ilovewp-doc-column-text-wrapper">
 								<form action="https://ilovewp.us14.list-manage.com/subscribe/post?u=b9a9c29fe8fb1b02d49b2ba2b&amp;id=18a2e743db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
 									<p class="newsletter-description"><?php esc_html_e('We send out the newsletter once every few months. It contains information about our new themes and important theme updates.','city-hall'); ?></p>
 									<div id="mc_embed_signup_scroll" style="margin: 24px 0; ">
@@ -133,26 +133,26 @@ function academiathemes_settings_page_doc() {
 									<p class="newsletter-disclaimer" style="font-size: 14px;"><?php esc_html_e('We use Mailchimp as our marketing platform. By clicking above to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing.','city-hall'); ?></p>
 								</form>
 
-							</div><!-- .academiathemes-doc-column-text-wrapper-->
+							</div><!-- .ilovewp-doc-column-text-wrapper-->
 						</div><!-- .doc-section -->
 						<?php if ( ILOVEWP_THEME_REVIEW_URL ) { ?>
 						<div class="doc-section">
-							<h3 class="column-title"><span class="academiathemes-icon dashicons dashicons-awards"></span><span class="academiathemes-title-text"><?php esc_html_e('Leave a Review','city-hall'); ?></span></h3>
-							<div class="academiathemes-doc-column-text-wrapper">
+							<h3 class="column-title"><span class="ilovewp-icon dashicons dashicons-awards"></span><span class="ilovewp-title-text"><?php esc_html_e('Leave a Review','city-hall'); ?></span></h3>
+							<div class="ilovewp-doc-column-text-wrapper">
 								<p><?php esc_html_e('If you enjoy using City Hall Theme, please leave a review for it on WordPress.org. It helps us continue providing updates and support for it.','city-hall'); ?></p>
 
 								<p class="doc-buttons"><a class="button button-primary" href="<?php echo esc_url(ILOVEWP_THEME_REVIEW_URL); ?>" rel="noopener" target="_blank"><?php esc_html_e('Write a Review for City Hall','city-hall'); ?></a></p>
 
-							</div><!-- .academiathemes-doc-column-text-wrapper-->
+							</div><!-- .ilovewp-doc-column-text-wrapper-->
 						</div><!-- .doc-section -->
 						<?php } ?>
-					</div><!-- .academiathemes-doc-column-wrapper -->
-				</li><!-- .academiathemes-doc-column --><li class="academiathemes-doc-column academiathemes-doc-column-2">
-					<div class="academiathemes-doc-column-wrapper">
+					</div><!-- .ilovewp-doc-column-wrapper -->
+				</li><!-- .ilovewp-doc-column --><li class="ilovewp-doc-column ilovewp-doc-column-2">
+					<div class="ilovewp-doc-column-wrapper">
 						<?php if ( ILOVEWP_THEME_UPGRADE_URL ) { ?>
 						<div class="doc-section">
-							<h3 class="column-title"><span class="academiathemes-icon dashicons dashicons-cart"></span><span class="academiathemes-title-text"><?php esc_html_e('Upgrade to City Hall Pro','city-hall'); ?></span></h3>
-							<div class="academiathemes-doc-column-text-wrapper">
+							<h3 class="column-title"><span class="ilovewp-icon dashicons dashicons-cart"></span><span class="ilovewp-title-text"><?php esc_html_e('Upgrade to City Hall Pro','city-hall'); ?></span></h3>
+							<div class="ilovewp-doc-column-text-wrapper">
 								<p><?php 
 								echo sprintf( 
 								/* translators: Theme name and link to WordPress.org Support forum for the theme */
@@ -160,7 +160,7 @@ function academiathemes_settings_page_doc() {
 								esc_html($theme_data->name)	); ?></p>
 								<p><?php esc_html_e('You will be able to create an even more unique website using the additional custom widgets, templates and customization options.','city-hall'); ?><br>
 
-								<p class="doc-buttons"><a class="button button-primary" href="<?php echo esc_url(ILOVEWP_THEME_UPGRADE_URL); ?>" rel="noopener" target="_blank"><?php esc_html_e('Upgrade to City Hall PRO','city-hall'); ?></a><?php if ( ILOVEWP_THEME_VIDEO_COMPARISON ) { ?><a class="button button-primary academiathemes-button academiathemes-button-youtube" href="<?php echo esc_url(ILOVEWP_THEME_VIDEO_COMPARISON); ?>" rel="noopener" target="_blank"><span class="dashicons dashicons-youtube"></span> <?php esc_html_e('Video: City Hall vs City Hall Pro','city-hall'); ?></a><?php } ?></p>
+								<p class="doc-buttons"><a class="button button-primary" href="<?php echo esc_url(ILOVEWP_THEME_UPGRADE_URL); ?>" rel="noopener" target="_blank"><?php esc_html_e('Upgrade to City Hall PRO','city-hall'); ?></a><?php if ( ILOVEWP_THEME_VIDEO_COMPARISON ) { ?><a class="button button-primary ilovewp-button ilovewp-button-youtube" href="<?php echo esc_url(ILOVEWP_THEME_VIDEO_COMPARISON); ?>" rel="noopener" target="_blank"><span class="dashicons dashicons-youtube"></span> <?php esc_html_e('Video: City Hall vs City Hall Pro','city-hall'); ?></a><?php } ?></p>
 
 								<table class="theme-comparison-table">
 									<tr>
@@ -229,15 +229,15 @@ function academiathemes_settings_page_doc() {
 									</tr>
 								</table>
 
-							</div><!-- .academiathemes-doc-column-text-wrapper-->
+							</div><!-- .ilovewp-doc-column-text-wrapper-->
 						</div><!-- .doc-section -->
 						<?php } ?>
-					</div><!-- .academiathemes-doc-column-wrapper -->
-				</li><!-- .academiathemes-doc-column -->
-			</ul><!-- .academiathemes-doc-columns -->
+					</div><!-- .ilovewp-doc-column-wrapper -->
+				</li><!-- .ilovewp-doc-column -->
+			</ul><!-- .ilovewp-doc-columns -->
 
-		</div><!-- .academiathemes-documentation -->
+		</div><!-- .ilovewp-documentation -->
 
-	</div><!-- .academiathemes-wrapper -->
+	</div><!-- .ilovewp-wrapper -->
 
 <?php }

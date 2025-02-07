@@ -6,7 +6,7 @@ if ( ! isset( $content_width ) ) $content_width = 560;
  * Define some constats
  */
 if( ! defined( 'ILOVEWP_VERSION' ) ) {
-	define( 'ILOVEWP_VERSION', '2.3.0' );
+	define( 'ILOVEWP_VERSION', '2.3.1' );
 }
 if( ! defined( 'ILOVEWP_THEME_LITE' ) ) {
 	define( 'ILOVEWP_THEME_LITE', true );
@@ -186,7 +186,7 @@ if ( ! function_exists( 'academiathemes_scripts_admin' ) ) {
 		// Styles
 		wp_enqueue_style(
 			'city-hall-style-admin',
-			get_template_directory_uri() . '/ilovewp-admin/css/academiathemes_theme_settings.css',
+			get_template_directory_uri() . '/ilovewp-admin/css/ilovewp_theme_settings.css',
 			'', ILOVEWP_VERSION, 'all'
 		);
 
@@ -472,6 +472,7 @@ if (is_admin()) {
 		require_once(get_template_directory() . '/ilovewp-admin/admin-notices/ilovewp-notice-welcome.php');
 		require_once(get_template_directory() . '/ilovewp-admin/admin-notices/ilovewp-notice-upgrade.php');
 		require_once(get_template_directory() . '/ilovewp-admin/admin-notices/ilovewp-notice-review.php');
+		require_once(get_template_directory() . '/ilovewp-admin/admin-notices/ilovewp-notice-magma.php');
 
 		// Remove theme data from database when theme is deactivated.
 		add_action('switch_theme', 'cityhall_db_data_remove');
