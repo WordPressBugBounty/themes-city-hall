@@ -1,7 +1,7 @@
 === City Hall ===
 Contributors: ilovewpcom
 Requires at least: 5.6
-Tested up to: 6.7
+Tested up to: 6.9
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -15,6 +15,9 @@ City Hall WordPress theme, Copyright (C) 2025 ILOVEWP
 City Hall WordPress theme is licensed under the GPL3.
 
 == Changelog ==
+
+= Version 2.3.2 - 2026-01-20 =
+* Fixed a bug with the Magma theme notice in the back-end.
 
 = Version 2.3.1 - 2025-02-07 =
 * Modified the upgrade notice.

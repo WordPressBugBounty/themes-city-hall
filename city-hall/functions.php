@@ -6,7 +6,7 @@ if ( ! isset( $content_width ) ) $content_width = 560;
  * Define some constats
  */
 if( ! defined( 'ILOVEWP_VERSION' ) ) {
-	define( 'ILOVEWP_VERSION', '2.3.1' );
+	define( 'ILOVEWP_VERSION', '2.3.2' );
 }
 if( ! defined( 'ILOVEWP_THEME_LITE' ) ) {
 	define( 'ILOVEWP_THEME_LITE', true );

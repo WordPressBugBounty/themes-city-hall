@@ -17,11 +17,7 @@ class city_hall_notice_magma extends city_hall_notice {
 		
 		$welcome_notice_was_dismissed = $this->get_notice_status('welcome');
 
-		if ( ! get_option( 'city_hall_theme_installed_time' ) ) {
-			update_option( 'city_hall_theme_installed_time', time() );
-		}
-
-		$this_notice_was_dismissed = $this->get_notice_status('magma-user-' . $this->current_user_id);
+		$this_notice_was_dismissed = $this->get_notice_status('upgrade-magma');
 		
 		if ( !$this_notice_was_dismissed && $welcome_notice_was_dismissed ) {
 			add_action( 'admin_notices', array( $this, 'magma_notice_markup' ) ); // Display this notice.
@@ -35,7 +31,7 @@ class city_hall_notice_magma extends city_hall_notice {
 	public function magma_notice_markup() {
 		
 		$dismiss_url = wp_nonce_url(
-			remove_query_arg( array( 'activated' ), add_query_arg( 'city_hall-hide-notice', 'magma-user-' . $this->current_user_id ) ),
+			remove_query_arg( array( 'activated' ), add_query_arg( 'city-hall-hide-notice', 'upgrade-magma' ) ),
 			'city_hall_hide_notices_nonce',
 			'_city_hall_notice_nonce'
 		);
@@ -43,7 +39,7 @@ class city_hall_notice_magma extends city_hall_notice {
 		$theme_data	 	= wp_get_theme();
 		$current_user 	= wp_get_current_user();
 
-		if ( ( get_option( 'city_hall_theme_installed_time' ) > strtotime( '-3 days' ) ) ) {
+		if ( ( get_option( 'city_hall_theme_installed_time' ) > strtotime( '-3 day' ) ) ) {
 			return;
 		}
 

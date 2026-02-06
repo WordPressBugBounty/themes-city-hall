@@ -13,8 +13,12 @@ class city_hall_notice_welcome extends city_hall_notice {
 
 	public function welcome_notice() {
 		
+		if ( ! get_option( 'city_hall_theme_installed_time' ) ) {
+			update_option( 'city_hall_theme_installed_time', time() );
+		}
+	
 		$this_notice_was_dismissed = $this->get_notice_status('welcome');
-		
+
 		if ( !$this_notice_was_dismissed ) {
 			if ( isset($_GET['page']) && 'city-hall-doc' == $_GET['page'] ) {
 				return;
